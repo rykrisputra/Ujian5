@@ -22,6 +22,7 @@ public class MahasiswaPage {
 	public String viewIndexMahasiswa(Model model) {
 		
 		model.addAttribute("listMahasiswa",modelMahasiswa.getAllMahasiswa());
+		model.addAttribute("active",1);
 		
 		return "view_mahasiswa";
 	}

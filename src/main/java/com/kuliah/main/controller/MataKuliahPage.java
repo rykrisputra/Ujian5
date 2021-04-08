@@ -22,7 +22,7 @@ public class MataKuliahPage {
 	public String viewIndexMataKuliah(Model model) {
 		
 		model.addAttribute("listMataKuliah",modelMataKuliah.getAllMataKuliah());
-		
+		model.addAttribute("active",3);
 		return "view_matakuliah";
 	}
 	

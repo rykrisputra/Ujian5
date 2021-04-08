@@ -22,7 +22,7 @@ public class DosenPage {
 	public String viewIndexDosen(Model model) {
 		
 		model.addAttribute("listDosen",modelDosen.getAllDosen());
-		
+		model.addAttribute("active",2);
 		return "view_dosen";
 	}
 	

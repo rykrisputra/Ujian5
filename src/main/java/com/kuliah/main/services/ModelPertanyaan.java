@@ -31,6 +31,11 @@ public class ModelPertanyaan  implements ModelPertanyaanInterface{
 	
 	}
 
+	@Override
+	public Pertanyaan cariPertanyaan(String id) {
+		// TODO Auto-generated method stub
+		return this.pertanyaanRepo.findById(Long.parseLong(id)).get();
+	}
 	
 
 	@Override
