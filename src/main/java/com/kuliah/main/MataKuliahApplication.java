@@ -15,6 +15,7 @@ import com.kuliah.main.entity.Nilai;
 import com.kuliah.main.entity.Pertanyaan;
 import com.kuliah.main.entity.PlotMataKuliah;
 import com.kuliah.main.entity.Soal;
+import com.kuliah.main.repository.PertanyaanRepository;
 import com.kuliah.main.repository.PlotMataKuliahRepository;
 import com.kuliah.main.repository.SoalRepository;
 
@@ -27,6 +28,9 @@ public class MataKuliahApplication implements CommandLineRunner{
 	
 	@Autowired
 	private SoalRepository soalRepo;
+	
+	@Autowired
+	private PertanyaanRepository pertanyaanRepo;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(MataKuliahApplication.class, args);
@@ -92,6 +96,17 @@ public class MataKuliahApplication implements CommandLineRunner{
 		
 		System.out.println(soalx.getNamaSoal());
 		
+		*/
+	/*	Pertanyaan pertanyaan1 = new Pertanyaan();
+		pertanyaan1.setPertanyaan("Siapa Dewabrata");
+		pertanyaan1.setJawaban1("Trainer");
+		pertanyaan1.setJawaban2("Artis");
+		pertanyaan1.setJawaban3("Pedagang");
+		pertanyaan1.setJawaban4("Pengangguran");
+		pertanyaan1.setJawabanBenar("1");
+		pertanyaan1.setStatusGambar("https://akcdn.detik.net.id/community/media/visual/2021/03/19/dadang-subur-dewa-kipas-1_169.jpeg");
+
+		this.pertanyaanRepo.save(pertanyaan1);
 		*/
 	}
 

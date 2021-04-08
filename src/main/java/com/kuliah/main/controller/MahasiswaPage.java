@@ -44,7 +44,7 @@ public class MahasiswaPage {
 		model.addAttribute("listMahasiswa",modelMahasiswa.getAllMahasiswa());
 		
 		
-		return "view_mahasiswa";
+		return "redirect:/mahasiswa/view";
 	}
 	
 	
@@ -65,7 +65,7 @@ public class MahasiswaPage {
 		model.addAttribute("listMahasiswa",modelMahasiswa.getAllMahasiswa());
 		
 		
-		return "view_mahasiswa";
+		return "redirect:/mahasiswa/view";
 	}
 
 }
