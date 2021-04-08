@@ -23,6 +23,7 @@ public class MahasiswaPage {
 		
 		model.addAttribute("listMahasiswa",modelMahasiswa.getAllMahasiswa());
 		model.addAttribute("active",1);
+		model.addAttribute("test","Test Aja");
 		
 		return "view_mahasiswa";
 	}

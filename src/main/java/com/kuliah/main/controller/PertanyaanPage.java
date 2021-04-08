@@ -45,10 +45,12 @@ public class PertanyaanPage {
 		return "add_pertanyaan";
 	}
 	
+	
+	
 	@PostMapping("/pertanyaan/vieew")
 	public String addPertanyaan(@RequestParam(value = "file")MultipartFile file,@ModelAttribute Pertanyaan pertanyaan, Model model) throws IOException { {
 		   String fileName = StringUtils.cleanPath(file.getOriginalFilename());
-		   pertanyaan.setStatusGambar(fileName);
+		  
 	         
 	        String uploadDir = "user-photos/" ;
 	

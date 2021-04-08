@@ -1,15 +1,15 @@
-@charset "ISO-8859-1";
-
-h1 {
-    color: red
+html,
+body {
+  height: 100%;
 }
 
-/* Selektor degnan class */
-.bg-yellow {
-    backgound-color: yellow;
+#page-content {
+  flex: 1 0 auto;
 }
 
-/* selektor dengan ID elemen */
-#header {
-    background: grey;
+#sticky-footer {
+  flex-shrink: none;
 }
+
+/* Other Classes for Page Styling */
+
