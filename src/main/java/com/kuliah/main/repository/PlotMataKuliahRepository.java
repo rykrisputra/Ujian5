@@ -6,4 +6,5 @@ import com.kuliah.main.entity.PlotMataKuliah;
 
 public interface PlotMataKuliahRepository extends CrudRepository<PlotMataKuliah, Long> {
 
+	
 }
